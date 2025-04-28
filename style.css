@@ -1,0 +1,36 @@
+body{
+  background: #222;
+}
+div{
+  height: 100px;
+  width: 100px;
+  background: red;
+  animation: square 4s linear 3s infinite normal both running;
+}
+@keyframes square{
+  0%{
+    translate:0 0;
+    background:white;
+    rotate:0;
+  }
+  25%{
+    translate:0 500px;
+    background:yellow;
+    rotate: 90deg;
+  }
+  50%{
+    translate:400px 500px;
+    background:green;
+    rotate: 180deg;
+  }
+  75%{
+    translate:400px 0px;
+    background:blue;
+    rotate: 270deg;
+  }
+  100%{
+    translate:0px 0px;
+    background:grey;
+    rotate: 360deg;
+  }
+}
